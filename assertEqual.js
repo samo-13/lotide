@@ -23,3 +23,9 @@ assertEqual("Lighthouse Labs", "Bootcamp"); // non-identical strings
 assertEqual(1, 5); // non-identical numbers
 assertEqual(1, 1); // identical numbers
 assertEqual("Lighthouse Labs", "Lighthouse Labs"); // identical strings
+
+// ---------------------------------------------------------------------------------------------------------
+// developer notes + links
+// ---------------------------------------------------------------------------------------------------------
+// --- https://developer.mozilla.org/en-US/docs/Web/API/console/assert
+
