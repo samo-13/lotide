@@ -26,7 +26,7 @@ let tail = function(array) {
   } else if (array.length === 1) {
     return array;
   } else {
-    return undefined;
+    return array;
   }
 };
 
@@ -36,7 +36,7 @@ let tail = function(array) {
 
 assertEqual(tail([5,6,7]), [6,7]); // numbers
 assertEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]); // strings
-assertEqual(tail([]), undefined); // empty array
+assertEqual(tail([]), []); // empty array
 assertEqual(tail(["Yo"]), "Yo"); // one string
 assertEqual(tail([1]), 1); // one number
 
