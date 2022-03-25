@@ -23,7 +23,7 @@ let tail = function(array) {
   let tailArray = []
   if (array.length > 1) {
   tailArray = array
-  tailArray.shift()
+  tailArray.slice(1)
   console.log(tailArray);
   return tailArray;
   } else {
@@ -62,6 +62,6 @@ assertEqual(oneArrayItem.length, 1);
 
 // ---------------------------------------------------------------------------------------------------------
 // developer notes
+// --- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
 // ---------------------------------------------------------------------------------------------------------
 
-// --- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
