@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------------------------------------------------
 // lotide project
-// --- a function head which returns the first item in the array.
-// --- should not return the first element as an array. It should simply return the element itself.
+// --- head function to return the first item in the array.
+// --- doesn't return the first element as an array -- returns the element itself.
 // ---------------------------------------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------------------------------------
