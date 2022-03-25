@@ -20,8 +20,14 @@ const assertEqual = function(actual, expected) {
 // ---------------------------------------------------------------------------------------------------------
 
 let tail = function(array) {
+  if (array.length > 1) {
   array.shift();
   return array;
+  } else if (array.length === 1) {
+    return array;
+  } else {
+    return undefined;
+  }
 };
 
 // ---------------------------------------------------------------------------------------------------------
