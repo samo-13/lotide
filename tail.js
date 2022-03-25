@@ -20,12 +20,12 @@ const assertEqual = function(actual, expected) {
 // ---------------------------------------------------------------------------------------------------------
 
 let tail = function(array) {
-  let tailArray = []
+  let tailArray = [];
   if (array.length > 1) {
-  tailArray = array
-  tailArray.slice(1)
-  console.log(tailArray);
-  return tailArray;
+    tailArray = array;
+    tailArray.slice(1);
+    console.log(tailArray);
+    return tailArray;
   } else {
     tailArray = array;
     console.log(tailArray);
