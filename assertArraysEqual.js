@@ -30,8 +30,8 @@ const assertArraysEqual = function(actual, expected) {
 // test code
 // ---------------------------------------------------------------------------------------------------------
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should pass
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 4]), false); // => should fail
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2]), false); // => should fail
-assertArraysEqual(eqArrays(['a', 'b', 'c'], ['a', 'b', 'c']), true); // => should pass
-assertArraysEqual(eqArrays(['a', 'b', 'c'], ['a', 'b', 'd']), false); // => should fail
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should pass
+assertArraysEqual([1, 2, 3], [1, 2, 4]); // => should fail
+assertArraysEqual([1, 2, 3], [1, 2]); // => should fail
+assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'c']); // => should pass
+assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'd']); // => should fail
