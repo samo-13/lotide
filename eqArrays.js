@@ -18,13 +18,24 @@ const assertEqual = function(actual, expected) {
 // ---------------------------------------------------------------------------------------------------------
 // eqArrays function
 // ---------------------------------------------------------------------------------------------------------
+const eqArrays = function(actual, expected) {
+  for (index = 0; index < actual.length; index++) {
+    if (actual[index] !== expected[index]) {
+      return false;
+    }
+  }
+
+}
 
 
 // ---------------------------------------------------------------------------------------------------------
 // test code
 // ---------------------------------------------------------------------------------------------------------
 
-assertEqual("Lighthouse Labs", "Bootcamp"); // non-identical strings
-assertEqual(1, 5); // non-identical numbers
-assertEqual(1, 1); // identical numbers
-assertEqual("Lighthouse Labs", "Lighthouse Labs"); // identical strings
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should pass
+assertEqual(eqArrays([1, 2, 3], [1, 2, 4]), false); // => should fail
+assertEqual(eqArrays([1, 2, 3], [1, 2]), false); // => should fail
+
+assertEqual(eqArrays(['a', 'b', 'c'], ['a', 'b', 'c']), true); // => should pass
+assertEqual(eqArrays(['a', 'b', 'c'], ['a', 'b', 'd']), false); // => should fail
+
