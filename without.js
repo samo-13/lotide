@@ -31,7 +31,7 @@ const assertArraysEqual = function(actual, expected) {
 // without function
 // ---------------------------------------------------------------------------------------------------------
 
-const without = function() {
+const without = function(source, itemsToRemove) {
 
 }
 
