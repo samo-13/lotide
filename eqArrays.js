@@ -22,12 +22,9 @@ const eqArrays = function(actual, expected) {
   for (index = 0; index < actual.length; index++) {
     if (actual[index] !== expected[index]) {
       return false;
-    }
-  }
-
-}
-
-
+    } 
+  } return true;
+};
 // ---------------------------------------------------------------------------------------------------------
 // test code
 // ---------------------------------------------------------------------------------------------------------
