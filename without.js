@@ -32,6 +32,12 @@ const assertArraysEqual = function(actual, expected) {
 // ---------------------------------------------------------------------------------------------------------
 
 const without = function(source, itemsToRemove) {
+  for (let sourceIndex = 0; sourceIndex < source.length; sourceIndex++) {
+    for (itemsToRemoveIndex = 0; itemsToRemoveIndex < itemsToRemove.length; itemsToRemoveIndex++) {
+      
+
+    }
+  }
 
 }
 
@@ -39,8 +45,7 @@ const without = function(source, itemsToRemove) {
 // test code
 // ---------------------------------------------------------------------------------------------------------
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should pass
-assertArraysEqual([1, 2, 3], [1, 2, 4]); // => should fail
-assertArraysEqual([1, 2, 3], [1, 2]); // => should fail
-assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'c']); // => should pass
-assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'd']); // => should fail
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]); // no need to capture return value for this test case
+// Make sure the original array was not altered by the without function
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
