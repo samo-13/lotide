@@ -1,7 +1,6 @@
 // ---------------------------------------------------------------------------------------------------------
 // lotide project
-// --- flatten function flattens a given an array with other arrays inside, into a single-level array.
-// --- only handles one level of nesting.
+// --- flatten function flattens a given array with other arrays inside, into a single-level array.
 // ---------------------------------------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------------------------------------
