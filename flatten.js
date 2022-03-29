@@ -33,12 +33,19 @@ const assertArraysEqual = function(actual, expected) {
 // ---------------------------------------------------------------------------------------------------------
 
 const flatten = function(input) {
-  
-}
+  let result = [].concat.apply([], input)
+  console.log(result);
+  return result;
+};
 
 // ---------------------------------------------------------------------------------------------------------
 // test code
 // ---------------------------------------------------------------------------------------------------------
+
+console.log(assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6])) // => [1, 2, 3, 4, 5, 6]
+console.log(assertArraysEqual(flatten([1, 2, [3, 4], 5, [6, 7]]), [1, 2, 3, 4, 5, 6, 7]))
+console.log(assertArraysEqual(flatten([1]), [1]))
+console.log(assertArraysEqual(flatten([]), []))
 
 // ---------------------------------------------------------------------------------------------------------
 // developer notes
