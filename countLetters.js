@@ -21,18 +21,18 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentence) {
   const results = {};
+  sentence = sentence.toLowerCase();
   for (let letter of sentence) {
     if (letter !== ' ') {
       if (results[letter]) {
         results[letter] += 1;
-    } 
-    else { 
-      (results[letter] = 1)
+      } else {
+        (results[letter] = 1);
+      }
+    }
   }
-}
-}
-return results;
-}
+  return results;
+};
 
 // ---------------------------------------------------------------------------------------------------------
 // test code
@@ -43,13 +43,12 @@ console.log(countLetters('My name is Sarah'));
 /*
 {
 m: 2,
-y: 1, 
 n: 1,
 a: 3,
-e: 1, 
+e: 1,
 i: 1,
 s: 2,
-r: 1, 
-h: 1 
+r: 1,
+h: 1
 };
 */
