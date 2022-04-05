@@ -52,3 +52,10 @@ r: 1,
 h: 1
 };
 */
+
+const sentence = 'My name is Sarah'
+const result = countLetters(sentence);
+
+assertEqual(result["m"], 2);
+assertEqual(result["n"], 1);
+assertEqual(result["a"], 3);
