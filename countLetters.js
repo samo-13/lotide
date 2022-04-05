@@ -22,6 +22,7 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(sentence) {
   const results = {};
   sentence = sentence.toLowerCase();
+  
   for (let letter of sentence) {
     if (letter !== ' ') {
       if (results[letter]) {
