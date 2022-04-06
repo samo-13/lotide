@@ -39,7 +39,7 @@ const letterPositions = function(sentence) {
 
   for (let letter of sentence) {
     if (letter !== ' ') {
-    if (results[letter]) {
+      if (results[letter]) {
         count += 1;
         results[letter].push(count);
       } else {
