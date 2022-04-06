@@ -46,6 +46,8 @@ const letterPositions = function(sentence) {
         count += 1;
         results[letter] = [count];
       }
+    } else {
+      count += 1;
     }
   }
   return results;
