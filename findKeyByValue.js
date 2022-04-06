@@ -22,7 +22,11 @@ const assertEqual = function(actual, expected){
 // ---------------------------------------------------------------------------------------------------------
 
 const findKeyByValue = function (obj, value) {
-  
+  for (let key in obj) {
+    if (obj[key] === value) {
+      return key;
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -37,3 +41,10 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+// ---------------------------------------------------------------------------------------------------------
+
+// developer notes
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+
+// ---------------------------------------------------------------------------------------------------------
