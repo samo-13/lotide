@@ -16,13 +16,9 @@ const assertEqual = function(actual, expected){
 };
 
 // ---------------------------------------------------------------------------------------------------------
-// test code
+// exports
+module.exports = assertEqual;
 // ---------------------------------------------------------------------------------------------------------
-
-assertEqual("Lighthouse Labs", "Bootcamp"); // non-identical strings
-assertEqual(1, 5); // non-identical numbers
-assertEqual(1, 1); // identical numbers
-assertEqual("Lighthouse Labs", "Lighthouse Labs"); // identical strings
 
 // ---------------------------------------------------------------------------------------------------------
 // developer notes + links

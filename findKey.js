@@ -38,3 +38,4 @@ let object1 = findKey({
 }, x => x.stars === 2) // => "noma"
 
 assertEqual(object1, 'noma');
+
