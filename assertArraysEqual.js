@@ -1,18 +1,14 @@
 // ---------------------------------------------------------------------------------------------------------
 // Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
 // ---------------------------------------------------------------------------------------------------------
+// The assertArraysEqual.js module should export its assertArraysEqual function
+// The assertArraysEqual.js file should require the eqArrays function instead of it being copied in there
 
 // ---------------------------------------------------------------------------------------------------------
-// eqArrays function
+// require
 // ---------------------------------------------------------------------------------------------------------
 
-const eqArrays = function(actual, expected) {
-  for (let index = 0; index < actual.length; index++) {
-    if (actual[index] !== expected[index]) {
-      return false;
-    }
-  } return true;
-};
+const eqArrays = require('./eqArrays');
 
 // ---------------------------------------------------------------------------------------------------------
 // assertArraysEqual function
@@ -27,11 +23,7 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // ---------------------------------------------------------------------------------------------------------
-// test code
+// exports
 // ---------------------------------------------------------------------------------------------------------
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should pass
-assertArraysEqual([1, 2, 3], [1, 2, 4]); // => should fail
-assertArraysEqual([1, 2, 3], [1, 2]); // => should fail
-assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'c']); // => should pass
-assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'd']); // => should fail
+module.exports = assertArraysEqual;
