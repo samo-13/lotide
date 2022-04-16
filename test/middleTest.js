@@ -2,26 +2,46 @@
 // require
 // ---------------------------------------------------------------------------------------------------------
 
-// ---------------------------------------------------------------------------------------------------------
-// require
-// ---------------------------------------------------------------------------------------------------------
-
+const assert = require('chai').assert;
 const middle = require('../middle');
-const assertArraysEqual = require('../assertArraysEqual');
 
 // ---------------------------------------------------------------------------------------------------------
 // test code
+// --- Note that for comparing arrays, Chai gives us assert.deepEqual, because assert.strictEqual simply uses === to compare values, which will not work for comparing objects and arrays.
 // ---------------------------------------------------------------------------------------------------------
 
-console.log(middle([1])) // => []
-console.log(middle([1, 2])) // => []
+describe("#middle", () => {
+  it("returns [3, 4] for [1, 2, 3, 4, 5, 6]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+  });
 
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]
+  // even
+  it("returns [1, 2, 3, 4] for [2, 3]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  });
 
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+  // odd
+  it("returns 3 for [1, 2, 3, 4, 5]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), 3);
+  });
 
-assertArraysEqual(middle([1, 2, 3]), [2]); // => should pass
-assertArraysEqual(middle([1]), []); // => should pass
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => should pass
+  // odd
+  it("returns 2 for [1, 2, 3]", () => {
+    assert.deepEqual(middle([1, 2, 3]), 2);
+  });
+
+  // empty array
+  it("returns [] for []", () => {
+    assert.deepEqual(middle([]), []);
+  });
+
+  // only 2 numbers
+  it("returns [] for [1, 2]", () => {
+    assert.deepEqual(middle([1, 2]), []);
+  });
+
+  // one number
+  it("returns [] for [1]", () => {
+    assert.deepEqual(middle([1]), []);
+  });
+});

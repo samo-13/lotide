@@ -43,5 +43,4 @@ describe("#tail", () => {
   it("returns [] for [1]", () => {
     assert.deepEqual(tail([1]), []);
   });
-
 });
