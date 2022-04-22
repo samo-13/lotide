@@ -6,6 +6,8 @@
 // --- if a particular string is meant to be counted but does not exist in the input array (like "f" in the example above), it also does not have to be included in the final count.
 // ---------------------------------------------------------------------------------------------------------
 
+const { countLetters } = require(".");
+
 // ---------------------------------------------------------------------------------------------------------
 // assertEqual function
 // ---------------------------------------------------------------------------------------------------------
@@ -62,3 +64,4 @@ assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
 
+module.exports = countOnly;

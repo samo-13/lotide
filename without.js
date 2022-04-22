@@ -57,3 +57,5 @@ console.log(without([1, 2, 3, 2, 1], [1, 2])); // => [3]
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 // ---------------------------------------------------------------------------------------------------------
+
+module.exports = without;

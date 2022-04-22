@@ -5,6 +5,8 @@
 // --- if no key with that given value is found, then it should return undefined.
 // ---------------------------------------------------------------------------------------------------------
 
+const { findKey } = require(".");
+
 // ---------------------------------------------------------------------------------------------------------
 // assertEqual function
 // ---------------------------------------------------------------------------------------------------------
@@ -48,3 +50,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
 // ---------------------------------------------------------------------------------------------------------
+
+module.exports = findKeyByValue;

@@ -68,3 +68,5 @@ console.log(assertArraysEqual(flatten([]), []))
 // --- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
 // --- refactor using recursion after recursion is learned to handle mutliple nesting
 // ---------------------------------------------------------------------------------------------------------
+
+module.exports = flatten;

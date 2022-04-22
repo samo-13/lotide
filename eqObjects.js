@@ -76,3 +76,5 @@ assertEqual(eqObjects(cd, cd2), false); // => false
 // --- Inside our loop, compare both objects' values for that key. Use === to ensure that the types are the same!
 // --- As soon as there is not a match, we can return false
 // --- Our control flow will therefore only get to the end of the loop if all the keys matched. We can and should thus return true at the end (after the loop)
+
+module.exports = eqObjects;

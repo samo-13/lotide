@@ -60,3 +60,5 @@ const result = countLetters(sentence);
 assertEqual(result["m"], 2);
 assertEqual(result["n"], 1);
 assertEqual(result["a"], 3);
+
+module.exports = countLetters;

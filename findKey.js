@@ -39,3 +39,4 @@ let object1 = findKey({
 
 assertEqual(object1, 'noma');
 
+module.exports = findKey;

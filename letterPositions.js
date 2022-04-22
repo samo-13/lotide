@@ -61,3 +61,5 @@ console.log(letterPositions("lighthouse in the house"));
 console.log(assertArraysEqual(letterPositions("hello").e, [1]));
 console.log(assertArraysEqual(letterPositions("hello").l, [2,3]));
 console.log(assertArraysEqual(letterPositions("lighthouse in the house").i, [1, 11]));
+
+module.exports = letterPositions;

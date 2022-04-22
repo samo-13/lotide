@@ -58,3 +58,5 @@ assertArraysEqual(results2,  ["GROUND", "CONTROL", "TO", "MAJOR", "TOM"]); // to
 results3 = map(words, word => word[0].toUpperCase() + word.substring(1));
 console.log(results3);
 assertArraysEqual(results3,  ["Ground", "Control", "To", "Major", "Tom"]); // first letter to uppercase
+
+module.exports = map;

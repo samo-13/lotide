@@ -60,3 +60,5 @@ console.log(results2);
 assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
 // output
 // [ 'I\'ve', 'been', 'to', 'Hollywood' ]
+
+module.exports = takeUntil;
