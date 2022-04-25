@@ -26,7 +26,7 @@ const middle = function(inputArray) {
     let oddMiddleValue = 0;
     for (let oddIndex = 0; oddIndex < inputArray.length; oddIndex ++) {
       inputArray[oddIndex] === inputArray[(inputArray.length - 1) / 2] && (oddMiddleValue = inputArray[oddIndex]);
-    } return oddMiddleValue;
+    } return [oddMiddleValue];
   }
 };
 
